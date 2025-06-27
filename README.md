@@ -2,7 +2,6 @@
 
 [![React](https://img.shields.io/badge/React-18.2.0-blue.svg)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-4.4.5-646CFF.svg)](https://vitejs.dev/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)]()
 
 A powerful, **100% client-side** PDF manipulation tool that allows you to convert images to PDF and split PDF files - all without uploading your files to any server! Your data stays private and secure on your device.
@@ -65,7 +64,7 @@ When you run `npm install`, the following components are automatically downloade
 
 1. **Download the Tool**
 
-   - Click the green "Code" button above
+   - Click the blue "Code" button above
    - Select "Download ZIP"
    - Extract the ZIP file to a folder on your computer
 
@@ -106,8 +105,8 @@ When you run `npm install`, the following components are automatically downloade
 
 ```bash
 # Clone the repository
-git clone <repository-url>
 cd pdf-ops
+git clone <repository-url>
 
 # Install dependencies
 npm install
@@ -115,8 +114,6 @@ npm install
 # Start development server
 npm run dev
 
-# Build for production
-npm run build
 ```
 
 ## 📋 System Requirements
@@ -283,10 +280,6 @@ We welcome contributions! Here's how you can help:
 3. **🔧 Submit Code**: Fork the repo and create a pull request
 4. **📖 Improve Docs**: Help make instructions clearer
 
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🙏 Acknowledgments
 
 - **PDF.js** team for the excellent PDF rendering library
@@ -299,7 +292,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🚀 Ready to Get Started?
 
 1. **Download Node.js** from [nodejs.org](https://nodejs.org/)
-2. **Download this tool** using the green "Code" button above
+2. **Download this tool** using the blue "Code" button above
 3. **Follow the Quick Start guide** above
 4. **Start converting and splitting PDFs!** 🎉
 
@@ -309,7 +302,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-**Made with ❤️ for everyone who works with PDFs**
+**Easing your Job working with PDF's**
 
 [⬆️ Back to Top](#-pdf-operations-tool)
 
