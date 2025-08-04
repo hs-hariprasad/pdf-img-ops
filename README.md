@@ -4,7 +4,7 @@
 [![Vite](https://img.shields.io/badge/Vite-4.4.5-646CFF.svg)](https://vitejs.dev/)
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)]()
 
-A powerful, **100% client-side** PDF manipulation tool that allows you to convert images to PDF and split PDF files - all without uploading your files to any server! Your data stays private and secure on your device.
+A powerful, **100% client-side** PDF manipulation tool that allows you to convert images to PDF, split PDF files, and compress images and PDFs - all without uploading your files to any server! Your data stays private and secure on your device.
 
 ## ✨ Features
 
@@ -25,6 +25,18 @@ A powerful, **100% client-side** PDF manipulation tool that allows you to conver
 - 📦 **Batch Download** - Download multiple split files as ZIP
 - 🏷️ **Custom Naming** - Name your split files as you want
 - 📊 **Progress Tracking** - Real-time processing progress
+
+### 🗜️ **File Compression**
+
+- 📷 **Image Compression** - Reduce image file sizes while maintaining quality
+- 📄 **PDF Compression** - Compress PDF files to save storage space
+- 🎯 **Target Size Control** - Specify desired file size with ±5% tolerance (e.g., 500KB target = 475-525KB result)
+- 🎨 **Format Conversion** - Convert between image formats during compression
+- ⚙️ **Quality Control** - Adjust compression quality from 10% to 100%
+- 📊 **Real-time Size Preview** - See original and target file sizes
+- 🔄 **Multiple Format Support** - JPEG, PNG, WebP output options
+- 🧠 **Smart Algorithm** - Uses binary search to find optimal compression settings
+- ⚠️ **Note**: Target size compression has approximately 5% tolerance due to technical limitations
 
 ## 🔒 Privacy & Security
 
@@ -64,7 +76,7 @@ When you run `npm install`, the following components are automatically downloade
 
 1. **Download the Tool**
 
-   - Click the blue "Code" button above
+   - Click the green "Code" button above
    - Select "Download ZIP"
    - Extract the ZIP file to a folder on your computer
 
@@ -186,6 +198,39 @@ npm run dev
 - Use "1-3,7-9" format for multiple ranges
 - Preview different pages using navigation arrows
 
+### 🗜️ Compressing Files
+
+1. **Select the Compression Tab**
+
+   - Click on "🗜️ Compression" at the top
+
+2. **Upload Your File**
+
+   - Drag and drop an image or PDF file
+   - Supports: JPG, PNG, GIF, BMP, WEBP, PDF
+   - View original file size instantly
+
+3. **Set Compression Options**
+
+   - **Target Size**: Specify desired file size (e.g., "500KB", "2MB")
+   - **Quality**: Adjust compression quality (10%-100%)
+   - **Output Format** (Images only): Choose JPEG, PNG, or WebP
+
+4. **Compress & Download**
+   - Click "🗜️ Compress Image/PDF"
+   - Wait for processing
+   - File downloads automatically with compression stats
+
+**💡 Pro Tips:**
+
+- ⚠️ **Important**: Target size compression has approximately **5% tolerance** - this means a 500KB target may result in files between 475KB-525KB due to technical compression limitations
+- JPEG: Best for photos, smallest file sizes
+- PNG: Best for graphics, supports transparency
+- WebP: Modern format with excellent compression
+- Algorithm automatically adjusts quality and dimensions
+- Use target size for precise file size requirements
+- If exact file size is critical, manually adjust the target size to account for the tolerance
+
 ## 🛠️ Technical Details
 
 ### Built With
@@ -261,7 +306,8 @@ pdf-ops/
 ├── 📁 src/
 │   ├── 📁 components/
 │   │   ├── ImageToPDF.jsx    # Image to PDF converter
-│   │   └── PDFSplitter.jsx   # PDF splitting functionality
+│   │   ├── PDFSplitter.jsx   # PDF splitting functionality
+│   │   └── Compression.jsx   # Image and PDF compression
 │   ├── App.jsx               # Main application component
 │   ├── main.jsx              # Application entry point
 │   └── index.css             # Styling
